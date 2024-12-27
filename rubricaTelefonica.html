@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rubrica Telefonica</title>
+        <link rel="stylesheet" href="stile.css" />
+    </head>
+    <body>
+        <!--Sezione per aggiungere nuovi articoli al menù-->
+        <section id="nuovoNumero">
+            <h2>Aggiungi Nuovo Contatto</h2>
+            <input type="text" id="nominativo" placeholder="Nome Persona" />
+            <input type="number" id="numero" placeholder="Numero Telefonico" />
+            <button onclick="aggiungiNumero()">Aggiungi</button>
+        </section>
+        <!--Sezione per visualizzare il menù-->
+        <section id="rubrica">
+            <h2>Rubrica Telefonica</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Numero</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody id="rubrica-items"></tbody>
+            </table>
+        </section>
+
+        <!-- <section id="orders">
+            <h2>Gestione ordini</h2>
+            <div id="order-list"></div>
+            <button onclick="aggiungiOrdine()">Aggiungi Ordine</button>
+        </section>  -->
+    </body>
+    <script src="rubrica.js"></script>
+</html>
